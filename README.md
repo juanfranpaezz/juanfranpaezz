@@ -2,7 +2,7 @@
 
 ### Backend engineer — Java 21 / Spring Boot · fintech payments (double-entry ledgers, idempotency, concurrency) · production Claude agents
 
-I build production backends in Java 21 / Spring Boot — double-entry payments cores, idempotent transfers, concurrency control — plus web, mobile and LLM agents, and I ship them end to end. Self-taught developer from Mar del Plata, Argentina. I designed the architecture and can defend every line; AI accelerated the build. Currently learning Python / FastAPI.
+I ship production systems alone, end to end, and prove the hard parts with tests. Backend in Java 21 / Spring Boot — double-entry payments cores, idempotent transfers, concurrency control — plus web front ends and production LLM agents. Programming Technician, UTN (Dec 2025), Mar del Plata, Argentina. The architecture and invariants are mine; AI accelerated the implementation, and I can defend every line.
 
 🏆 Top 8 — Anthropic & Kaszek Buenos Aires Hackathon 2026
 💼 Automation Developer @ Wortise (contractor, 100% remote) from October 2026
@@ -29,7 +29,6 @@ A multi-tenant scheduling & payments platform I built and shipped solo, full-sta
 - **Backend** — Java 21 / Spring Boot, Spring Security + JWT, WebSocket (STOMP) real-time chat & notifications, MercadoPago + Google Calendar integrations, Hibernate row-level multi-tenancy.
 - **Production Claude agent** — the AI receptionist above, built on the raw Anthropic Messages API over the JDK HttpClient (no SDK client), plus per-tenant monthly LLM cost caps, an automatic Sonnet→Haiku degradation once a tenant's daily token usage runs high (cost control), and a Resilience4j circuit breaker.
 - **Frontend** — React 18 SPA (booking, credits, chat, onboarding) with defensive XSS hardening (DOMPurify + server-side jsoup allowlist).
-- **Mobile** — Expo / React Native app in **TypeScript** (biometric login, push notifications, multi-role routing).
 - **DevOps** — Docker, nginx/Caddy, Prometheus + Grafana observability.
 
 Across VINDA, the architecture and invariants are mine; AI accelerated the implementation.
@@ -40,12 +39,13 @@ Across VINDA, the architecture and invariants are mine; AI accelerated the imple
 
 ### Tech
 
-**Languages:** Java · JavaScript · TypeScript (mobile) · SQL · learning Python
+**Languages:** Java · Python (the agent repo above) · JavaScript · SQL
 **Backend:** Spring Boot · Hibernate/JPA · REST · Spring Security / OAuth2.1 · Spring AI (MCP) · learning FastAPI
-**Frontend & Mobile:** React · React Native / Expo · HTML · CSS
+**Frontend:** React · HTML · CSS
 **Data & Infra:** PostgreSQL · Flyway · Docker · GitHub Actions (CI) · Prometheus + Grafana · nginx/Caddy
 **AI:** Anthropic / Claude API (agentic tool-use loops, prompt-injection defense, evals)
 **Testing:** JUnit · Testcontainers · Playwright · Vitest / Jest
+**Starting Oct 2026 at Wortise:** Node.js · TypeScript
 **Security posture:** defensive — parameterized queries (JPA), XSS sanitization, prompt-injection guards, auth gates
 
 ---
