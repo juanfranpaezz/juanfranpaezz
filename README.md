@@ -1,10 +1,11 @@
 # Juan Francisco Paez
 
-### Full-stack engineer who ships production AI — Java/Spring · React/React Native · Claude agents
+### Backend engineer — Java 21 / Spring Boot · fintech payments (double-entry ledgers, idempotency, concurrency) · production Claude agents
 
-Self-taught developer from Mar del Plata, Argentina. I build backends, web, mobile, and LLM agents, and I ship them end to end. I designed the architecture and can defend every line; AI accelerated the build. Currently learning Python / FastAPI.
+I build production backends in Java 21 / Spring Boot — double-entry payments cores, idempotent transfers, concurrency control — plus web, mobile and LLM agents, and I ship them end to end. Self-taught developer from Mar del Plata, Argentina. I designed the architecture and can defend every line; AI accelerated the build. Currently learning Python / FastAPI.
 
 🏆 Top 8 — Anthropic & Kaszek Buenos Aires Hackathon 2026
+💼 Automation Developer @ Wortise (contractor, 100% remote) from October 2026
 🌎 Fully remote (UTC-3, strong US-hours overlap) · open to remote LATAM / USD roles
 
 ---
@@ -20,10 +21,10 @@ The AI core of my shipped WhatsApp booking agent — the sanitized layer extract
 
 *Python.*
 
-**💸 [LedgerMind](https://github.com/juanfranpaezz/ledgermind)** — *public · [live demo](https://ledgermind-odlf.onrender.com) (free tier, ~60–90s cold start)*
+**💸 [LedgerMind](https://github.com/juanfranpaezz/ledgermind)** — *public · runs locally in one command*
 A double-entry payments core in Java/Spring. Append-only ledger (money as integer cents), idempotent transfers, and optimistic-locking concurrency. Verified by a 50-concurrent-transfer money-conservation test on real PostgreSQL (Testcontainers). Ships with a read-only MCP audit interface secured by OAuth2.1 (an AI agent can read the ledger, never move money), a SHA-256 hash-chain for tamper-evidence, Docker, and CI on every push.
 
-**📅 VINDA** — *production SaaS (private repo)*
+**📅 VINDA** — *production SaaS (private repo · in maintenance since July 2026)*
 A multi-tenant scheduling & payments platform I built and shipped solo, full-stack:
 - **Backend** — Java 21 / Spring Boot, Spring Security + JWT, WebSocket (STOMP) real-time chat & notifications, MercadoPago + Google Calendar integrations, Hibernate row-level multi-tenancy.
 - **Production Claude agent** — the AI receptionist above, built on the raw Anthropic Messages API over the JDK HttpClient (no SDK client), plus per-tenant monthly LLM cost caps, an automatic Sonnet→Haiku degradation once a tenant's daily token usage runs high (cost control), and a Resilience4j circuit breaker.
