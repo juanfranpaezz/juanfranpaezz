@@ -17,7 +17,7 @@ The AI core of my shipped WhatsApp booking agent — the sanitized layer extract
 - Bounded agentic tool-use loop over the Anthropic Messages API — hand-written, not the SDK's `tool_runner` or an agent framework
 - 6 JSON-schema tools behind an allow-list
 - Two-layer prompt-injection guard (regex pre-filter + stored-data sanitizer), both layers unit-tested
-- 7 deterministic eval cases + prompt-cache wiring
+- 7 deterministic eval cases, run in CI on every push + prompt-cache wiring
 
 *Python.*
 
