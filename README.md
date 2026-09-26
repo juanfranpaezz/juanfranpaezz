@@ -22,7 +22,7 @@ The AI core of my shipped WhatsApp booking agent — the sanitized layer extract
 *Python.*
 
 **💸 [LedgerMind](https://github.com/juanfranpaezz/ledgermind)** — *public · runs locally in one command*
-A double-entry payments core in Java/Spring. Append-only ledger (money as integer cents), idempotent transfers, and optimistic-locking concurrency. Verified by a 50-concurrent-transfer money-conservation test on real PostgreSQL (Testcontainers). Ships with a read-only MCP audit interface secured by OAuth2.1 (an AI agent can read the ledger, never move money), a SHA-256 hash-chain for tamper-evidence, Docker, and CI on every push.
+A double-entry payments core in Java/Spring. Append-only ledger (money as integer cents), idempotent transfers, and optimistic-locking concurrency. Verified by a 50-concurrent-transfer money-conservation test on real PostgreSQL (Testcontainers). Ships with a read-only MCP audit interface secured by OAuth2.1 (an AI agent can read the ledger, never move money), a SHA-256 hash-chain for tamper-evidence, Docker, and CI on every push. Apache-2.0.
 
 **📅 VINDA** — *production SaaS (private repo · in maintenance since July 2026)*
 A multi-tenant scheduling & payments platform I built and shipped solo, full-stack:
